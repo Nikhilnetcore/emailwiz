@@ -44,7 +44,7 @@ give your full domain without any subdomain, i.e. `lukesmith.xyz`.
    for the first month to play around.
 2. **A Let's Encrypt SSL certificate for your site's `mail.` subdomain**.
 3. You need two little DNS records set on your domain registrar's site/DNS
-   server: (1) an **MX record** pointing to your own main domain/IP and (2) a
+   server: (1) an **MX record**(https://grademyemail.co/mx-record-lookup) pointing to your own main domain/IP and (2) a
    **CNAME record** for your `mail.` subdomain.
 4. **A Reverse DNS entry for your site.** Go to your VPS settings and add an
    entry for your IPv4 Reverse DNS that goes from your IP address to
@@ -53,7 +53,7 @@ give your full domain without any subdomain, i.e. `lukesmith.xyz`.
    will have a section on their instance settings page to add a reverse DNS PTR
    entry.
    You can use the 'Test Email Server' or ':smtp' tool on
-   [mxtoolbox](https://mxtoolbox.com/SuperTool.aspx) to test if you set up
+   [mxtoolbox](https://mxtoolbox.com/SuperTool.aspx) or [GradeMyEmail](https://grademyemail.co/email-tester) to test if you set up
    a reverse DNS correctly. This step is not required for everyone, but some
    big email services like Gmail will stop emails coming from mail servers
    with no/invalid rDNS lookups. This means your email will fail to even
